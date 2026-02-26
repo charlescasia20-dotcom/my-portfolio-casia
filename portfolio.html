@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charles Casia | Creative Portfolio</title>
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+    body{background:#0f172a;color:#e5e7eb;scroll-behavior:smooth}
+
+    /* HERO */
+    .hero{
+      min-height:100vh;
+      display:grid;
+      place-items:center;
+      background:radial-gradient(circle at top,#38bdf8,#020617 60%);
+      text-align:center;
+      padding:20px
+    }
+
+    .hero-card{
+      background:rgba(2,6,23,.85);
+      backdrop-filter:blur(10px);
+      padding:50px 35px;
+      border-radius:25px;
+      max-width:420px;
+      box-shadow:0 20px 60px rgba(0,0,0,.5)
+    }
+
+    .hero img{
+      width:150px;height:150px;border-radius:50%;
+      border:4px solid #38bdf8;margin-bottom:20px;object-fit:cover
+    }
+
+    .hero h1{font-size:2.6rem;margin-bottom:10px}
+    .hero p{font-size:1.1rem;color:#cbd5f5}
+
+    .hero .btn{
+      margin-top:25px;display:inline-block;
+      padding:12px 30px;border-radius:30px;
+      background:#38bdf8;color:#020617;
+      font-weight:bold;text-decoration:none;
+      transition:.3s
+    }
+
+    .hero .btn:hover{transform:scale(1.08)}
+
+    /* NAV */
+    nav{
+      position:sticky;top:0;z-index:100;
+      background:#020617;padding:14px;text-align:center
+    }
+
+    nav a{color:#e5e7eb;margin:0 16px;text-decoration:none;font-weight:600}
+    nav a:hover{color:#38bdf8}
+
+    section{padding:90px 20px;max-width:1100px;margin:auto}
+    section h2{text-align:center;font-size:2.3rem;color:#38bdf8;margin-bottom:40px}
+
+    /* ABOUT */
+    .about p{text-align:center;font-size:1.1rem;max-width:800px;margin:auto;color:#cbd5f5}
+
+    /* SKILLS */
+    .skills{
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:22px
+    }
+
+    .skill{
+      background:#020617;border-radius:20px;
+      overflow:hidden;text-align:center;
+      box-shadow:0 15px 40px rgba(0,0,0,.4)
+    }
+
+    .skill img{
+      width:100%;height:160px;object-fit:cover
+    }
+
+    .skill p{
+      padding:15px;font-weight:bold
+    }
+
+    /* PROJECTS / SERVICES */
+    .projects{
+      display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px
+    }
+
+    .project{
+      background:linear-gradient(160deg,#020617,#020617cc);
+      padding:30px;border-radius:25px;
+      box-shadow:0 20px 50px rgba(0,0,0,.5);
+      transition:.3s
+    }
+
+    .project:hover{transform:scale(1.05)}
+    .project h3{color:#60a5fa;margin-bottom:10px}
+
+    .project button{
+      margin-top:15px;padding:10px 22px;
+      border:none;border-radius:25px;
+      background:#38bdf8;color:#020617;
+      font-weight:bold;cursor:pointer
+    }
+
+    /* CONTACT */
+    .contact-box{
+      max-width:500px;margin:auto;
+      background:#020617;padding:40px;
+      border-radius:25px;box-shadow:0 20px 50px rgba(0,0,0,.5);
+      text-align:center
+    }
+
+    .contact-btn{
+      display:block;
+      margin:15px 0;
+      padding:14px;
+      border-radius:30px;
+      font-weight:bold;
+      text-decoration:none;
+      color:#020617
+    }
+
+    .email{background:#ea4335}
+    .fb{background:#1877f2}
+
+    footer{text-align:center;padding:25px;background:#020617;color:#94a3b8;margin-top:60px}
+
+    @media(max-width:600px){.hero h1{font-size:2.2rem}}
+  </style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero" id="home">
+  <div class="hero-card">
+    <img src="casua.jpg" alt="Profile">
+    <h1>Charles Casia</h1>
+    <p id="typing"></p>
+    <a href="#contact" class="btn">Contact Me</a>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>
+    Hi! I'm Charles Casia — a phone technician, cameraman/videographer, and drone pilot.
+    I specialize in phone repair, specs analysis, and creating cinematic photos & videos.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill">
+      <img src="jaj.jpg" alt="Phone Technician">
+      <p>Phone Technician</p>
+    </div>
+    <div class="skill">
+      <img src="jaj.jpg" alt="Phone Specs Analysis">
+      <p>Phone Specs Analysis</p>
+    </div>
+    <div class="skill">
+      <img src="3.jpg" alt="Cameraman Videographer">
+      <p>Cameraman / Videographer</p>
+    </div>
+    <div class="skill">
+      <img src="5.jpg" alt="Drone Pilot">
+      <p>Drone Pilot</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <h2>Services</h2>
+  <div class="projects">
+    <div class="project">
+      <h3>Phone Repair & Diagnostics</h3>
+      <p>Hardware & software troubleshooting.</p>
+    </div>
+    <div class="project">
+      <h3>Phone Specs Consultation</h3>
+      <p>Helping buyers choose the best device.</p>
+    </div>
+    <div class="project">
+      <h3>Drone & Cinematic Shots</h3>
+      <p>Aerial photos, and cinematic videos on drone.  And can do cinematic shots on phone or camera.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-box">
+    <a class="contact-btn email" href="mailto:charlescasia20@gmail.com">
+       📧 Email Me
+    </a>
+
+    <a class="contact-btn fb" href="https://www.facebook.com/share/17vMCXaRQX/" target="_blank">
+       📘 Visit My Facebook
+    </a>
+
+    <p style="margin-top:20px">
+      Email: <b>charlescasia20@gmail.com</b><br>
+      Facebook: Charles Casia
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Charles Casia</p>
+</footer>
+
+<script>
+  const text = "Phone Technician • Cameraman / Videographer • Drone Pilot";
+  let i = 0;
+  function typeEffect(){
+    if(i < text.length){
+      document.getElementById("typing").innerHTML += text.charAt(i);
+      i++; setTimeout(typeEffect,80);
+    }
+  }
+  typeEffect();
+</script>
+
+</body>
+</html>
